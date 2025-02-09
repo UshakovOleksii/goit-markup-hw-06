@@ -1083,6 +1083,9 @@ img {
 }
 .section-team {
   background-color: #f4f4fd;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .section-heading {
@@ -1097,9 +1100,10 @@ img {
 }
 
 .team-list {
-  list-style: none;
-  align-items: center;
-  gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
+  justify-content: center;
 }
 .team-item {
   background-color: #ffffff;
@@ -1107,7 +1111,6 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding-bottom: 72px;
 }
 .team-item:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
