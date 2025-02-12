@@ -200,6 +200,7 @@ img {
     left: 0;
     width: 100%;
     background-color: #fff;
+    z-index: 10;
   }
   .contact-link {
     font-size: 16px;
@@ -430,8 +431,17 @@ img {
   background-size: cover;
   background-position: center;
   max-width: 320px;
-  max-height: 432px;
   gap: 0px;
+  padding: 72px 0;
+}
+@media (min-resolution: 2x) {
+  .main-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/mob-bg@2x.jpg);
+  }
 }
 .section-h {
   font-family: Roboto;
@@ -444,9 +454,9 @@ img {
   text-decoration-skip-ink: none;
   color: rgba(255, 255, 255, 1);
   display: flex;
-  margin-top: 72px;
-  margin-left: 52px;
-  margin-right: 52px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 216px;
 }
 
 .btn-order {
@@ -466,7 +476,6 @@ img {
   margin: 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: 72px;
-  margin-bottom: 72px;
 }
 .backdrop {
   position: fixed;
@@ -551,7 +560,7 @@ img {
   letter-spacing: 0.02em;
 }
 .modal-input {
-  width: 256px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: transparent;
@@ -562,7 +571,7 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input-comment {
-  width: 256px;
+  width: 100%;
   height: 120px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: transparent;
@@ -607,7 +616,6 @@ img {
   margin-bottom: 4px;
 }
 .input-wrap {
-  display: flex;
   position: relative;
 }
 
@@ -638,7 +646,6 @@ img {
 }
 .comment-input {
   margin-bottom: 16px;
-  margin-right: 16px;
 }
 .send-form {
   display: block;
@@ -703,7 +710,6 @@ img {
   .main-section {
     background-color: #2e2f42;
     max-width: 768px;
-    max-height: 436px;
     margin: 0 auto;
     background-color: #2e2f42;
     display: flex;
@@ -711,7 +717,7 @@ img {
     align-items: center;
     text-align: center;
     box-sizing: border-box;
-    padding: 188px 0;
+    padding: 112px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -720,7 +726,15 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    max-width: 1440px;
+  }
+  @media (min-resolution: 2x) {
+    .main-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/tablet-bg@2x.jpg);
+    }
   }
   .section-h {
     font-size: 56px;
@@ -762,6 +776,7 @@ img {
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
       visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 12;
   }
   .backdrop.is-open {
     opacity: 1;
@@ -976,7 +991,17 @@ img {
 }
 @media screen and (min-width: 1158px) {
   .main-section {
-    min-height: 600px;
+    max-width: 1440px;
+    padding: 188px 0;
+  }
+  @media (min-resolution: 2x) {
+    .main-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/des-bg@2x.jpg);
+    }
   }
   .wrapper {
     padding-top: 72px;
@@ -998,7 +1023,7 @@ img {
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .section-paragraph {
@@ -1010,7 +1035,11 @@ img {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  padding-bottom: 72px;
+}
+@media screen and (max-width: 767px) {
+  .section-title-one:not(:last-child) {
+    margin-bottom: 72px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1024,18 +1053,16 @@ img {
 
   .section-paragraph {
     text-align: left;
-    padding-bottom: 72px;
   }
   .section-title-one {
-    width: 45%;
+    width: calc((100% - 24px) / 2);
     text-align: left;
   }
   .advantages {
     padding: 96px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 40px;
+    gap: 72px 24px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -1051,7 +1078,6 @@ img {
     justify-content: center;
     border: 1px solid #8e8f99;
     border-radius: 4px;
-    padding: 10px;
     height: 112px;
     background-color: #f4f4fd;
     margin-bottom: 8px;
@@ -1086,6 +1112,8 @@ img {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .section-heading {
@@ -1132,6 +1160,7 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-align: center;
+  margin-bottom: 8px;
 }
 .a-social-network {
   width: 100%;
@@ -1182,7 +1211,7 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 24px;
+    gap: 64px 24px;
   }
 
   .team-item {
@@ -1371,7 +1400,7 @@ img {
   }
   .portfolio-list {
     justify-content: center;
-    gap: 24px;
+    gap: 72px 24px;
   }
 
   .portfolio-item {
@@ -1399,6 +1428,9 @@ img {
   .portfolio-section {
     padding-top: 120px;
     padding-bottom: 120px;
+  }
+  .portfolio-list {
+    gap: 48px 24px;
   }
 }
 .footer-section {
@@ -1478,7 +1510,7 @@ img {
   height: 40px;
 }
 .footer-paragraph-social-svg {
-  padding-top: 72px;
+  margin-top: 72px;
   text-align: center;
   width: 100%;
 }
@@ -1504,6 +1536,7 @@ img {
   justify-content: center;
   display: flex;
   flex-direction: column;
+  margin-top: 72px;
 }
 .email-input::placeholder {
   font-family: Roboto;
@@ -1521,8 +1554,7 @@ img {
   align-items: center;
   justify-content: center;
   gap: 16px;
-  max-width: 360px;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 .footer-container-p {
   font-family: Roboto;
@@ -1536,7 +1568,6 @@ img {
   margin-bottom: 16px;
   align-items: center;
   justify-content: center;
-  margin-top: 72px;
 }
 .email-input {
   border: 1px solid rgba(255, 255, 255, 1);
@@ -1589,10 +1620,6 @@ img {
     align-items: flex-start;
     padding-left: 108px;
   }
-  .footer-section {
-    max-width: 1157px;
-    max-height: 456px;
-  }
 
   .logo-p {
     max-width: 300px;
@@ -1604,7 +1631,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 0;
+    margin-top: 0;
   }
 
   .icon-ellipse-footer {
@@ -1627,6 +1654,7 @@ img {
     gap: 24px;
     flex-wrap: nowrap;
     justify-content: left;
+    flex-direction: row;
   }
 
   .email-input {
@@ -1657,15 +1685,19 @@ img {
     margin-right: 120px;
   }
   .footer-paragraph-social-svg {
-    margin-right: 150px;
+    margin-right: 80px;
   }
   .footer-section {
     background-color: #2e2f42;
     padding: 100px 0;
   }
   .footer-container {
-    padding-left: 0;
+    padding: 0 15px;
     display: flex;
+    flex-wrap: nowrap;
+  }
+  .footer-div {
+    margin-top: 0;
   }
 
   .footer-logo {

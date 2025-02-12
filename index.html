@@ -172,8 +172,8 @@
               </div>
               <h3 class="section-title">Diligence</h3>
               <p class="section-paragraph">
-                Research and confirm brands that present the strongest digital
-                growth opportunities and minimize risk.
+                Research and confirm brands with the strongest digital growth
+                opportunities and minimize risk.
               </p>
             </li>
 
@@ -199,6 +199,10 @@
           <ul class="team-list">
             <li class="team-item">
               <img
+                srcset="
+                  ./images/mark_guerrero.jpg,
+                  ./images/mark_guerrero@2x.jpg
+                "
                 src="./images/mark_guerrero.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -244,6 +248,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/tom_ford.jpg, ./images/tom_ford@2x.jpg"
                 src="./images/tom_ford.jpg"
                 alt="Frontend Developer"
                 width="264"
@@ -290,6 +295,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/camila_garcia.jpg,
+                  ./images/camila_garcia@2x.jpg
+                "
                 src="./images/camila_garcia.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -336,6 +345,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/daniel_wilson.jpg,
+                  ./images/daniel_wilson@2x.jpg
+                "
                 src="./images/daniel_wilson.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -390,12 +403,30 @@
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <div class="img-portfolio-list">
-                <img
-                  class="portfolio-item-img"
-                  src="./images/bank_app.jpg"
-                  alt="Banking App"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/bank-desk.jpg    1x,
+                      ./images/bank-desk@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/bank-tab.jpg    1x,
+                      ./images/bank-tab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/bank-mob.jpg    1x,
+                      ./images/bank-mob@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./images/bank-mob.jpg" alt="portfolio pictxure" />
+                </picture>
                 <p class="portfolio-item-paragraph-two">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -409,9 +440,31 @@
             </li>
             <li class="portfolio-item">
               <div class="img-portfolio-list">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/payment-desk.jpg    1x,
+                      ./images/payment-desk@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/payment-tab.jpg    1x,
+                      ./images/payment-tab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/payment-mob.jpg    1x,
+                      ./images/payment-mob@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
                 <img
                   class="portfolio-item-img image-two"
-                  src="./images/payment.jpg"
+                  src="./images/payment-mob.jpg"
                   alt="Cashless Payment"
                   width="360"
                 />
@@ -428,9 +481,31 @@
             </li>
             <li class="portfolio-item">
               <div class="img-portfolio-list">
+                                <picture>
+                  <source
+                    srcset="
+                      ./images/meditation_app-desk.jpg    1x,
+                      ./images/meditation_app-desk@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/meditation_app-tab.jpg    1x,
+                      ./images/meditation_app-tab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/meditation_app-mob.jpg    1x,
+                      ./images/meditation_app-mob@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
                 <img
                   class="portfolio-item-img"
-                  src="./images/meditation_app.jpg"
+                  src="./images/meditation_app-mob.jpg"
                   alt="Meditation App"
                   width="360"
                 />
@@ -447,9 +522,31 @@
             </li>
             <li class="portfolio-item">
               <div class="img-portfolio-list">
+                                                <picture>
+                  <source
+                    srcset="
+                      ./images/car-desk.jpg    1x,
+                      ./images/car-desk@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/car-tab.jpg    1x,
+                      ./images/car-tab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/car-mob.jpg    1x,
+                      ./images/car-mob@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
                 <img
                   class="portfolio-item-img"
-                  src="./images/car.jpg"
+                  src="./images/car-mob.jpg"
                   alt="Taxi Service"
                   width="360"
                 />
@@ -466,9 +563,31 @@
             </li>
             <li class="portfolio-item">
               <div class="img-portfolio-list">
+                                                <picture>
+                  <source
+                    srcset="
+                      ./images/screen-desk.jpg    1x,
+                      ./images/screen-desk@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/screen-tab.jpg    1x,
+                      ./images/screen-tab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/screen-mob.jpg    1x,
+                      ./images/screen-mob@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
                 <img
                   class="portfolio-item-img"
-                  src="./images/screen.jpg"
+                  src="./images/screen-mob.jpg"
                   alt="Screen Illustrations"
                   width="360"
                 />
@@ -485,9 +604,31 @@
             </li>
             <li class="portfolio-item">
               <div class="img-portfolio-list">
+                                                <picture>
+                  <source
+                    srcset="
+                      ./images/online-desk.jpg    1x,
+                      ./images/online-desk@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/online-tab.jpg    1x,
+                      ./images/online-tab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/online-mob.jpg    1x,
+                      ./images/online-mob@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
                 <img
                   class="portfolio-item-img"
-                  src="./images/online.jpg"
+                  src="./images/online-mob.jpg"
                   alt="Online Courses"
                   width="360"
                 />
